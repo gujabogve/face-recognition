@@ -3,8 +3,11 @@ import re
 from datetime import datetime
 
 from flask import Flask, render_template, request
+import os
 
-app = Flask(__name__)
+APP_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TEMPLATE_PATH = os.path.join(APP_PATH, 'templates/')
+app = Flask(__name__, template_folder=TEMPLATE_PATH)
 
 
 @app.route('/')

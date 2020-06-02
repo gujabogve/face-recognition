@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 .idea
+storage/faces/
 build/
 develop-eggs/
 dist/
